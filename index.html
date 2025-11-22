@@ -159,23 +159,27 @@
     .board-list li + li{ margin-top:.15rem }
 
     /* Gallery (이미지 비율 유지, 4열 그리드) */
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:16px;
-    }
-    .gallery img{
-      width:100%;
-      height:auto;          /* 이미지 비율 그대로, 자르지 않음 */
-      border-radius:10px;
-      display:block;
-    }
-    @media (max-width:900px){
-      .gallery{ grid-template-columns:repeat(3,1fr) }
-    }
-    @media (max-width:600px){
-      .gallery{ grid-template-columns:repeat(2,1fr) }
-    }
+/* Gallery */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;              /* 8px로 해도 상관 없음 */
+}
+.gallery img{
+  width:100%;
+  height:auto;           /* ← 원본 비율 그대로 */
+  border-radius:10px;
+  display:block;
+}
+
+/* 반응형: 화면이 좁아질수록 열 수 줄이기 */
+@media (max-width:900px){
+  .gallery{ grid-template-columns:repeat(3,1fr); }
+}
+@media (max-width:600px){
+  .gallery{ grid-template-columns:repeat(2,1fr); }
+}
+
 
     /* Contact / Footer */
     form label{ display:block; margin:.6rem 0 .25rem }
