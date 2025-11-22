@@ -110,40 +110,12 @@
     .grid{ display:grid; gap:16px }
     .grid.cols-3{ grid-template-columns:repeat(3,1fr) }
     .grid.cols-2{ grid-template-columns:repeat(2,1fr) }
-    @media (max-width:960px){
-      .grid.cols-3{ grid-template-columns:repeat(2,1fr) }
-    }
-    @media (max-width:640px){
-      .grid.cols-3,
-      .grid.cols-2{ grid-template-columns:1fr }
-    }
-    .card{
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:14px;
-      padding:16px;
-      box-shadow:var(--shadow);
-    }
-    .badge{
-      display:inline-block;
-      font-size:.8rem;
-      padding:.2rem .5rem;
-      border-radius:999px;
-      border:1px solid var(--border);
-      color:#2e2e2e;
-      background:#fafafa;
-    }
-    .btn{
-      display:inline-block;
-      padding:.5rem .8rem;
-      border-radius:10px;
-      background:#f3f7f7;
-      border:1px solid var(--border);
-    }
-    .btn:hover{
-      background:#edf3f3;
-      text-decoration:none;
-    }
+    @media (max-width:960px){ .grid.cols-3{ grid-template-columns:repeat(2,1fr) } }
+    @media (max-width:640px){ .grid.cols-3, .grid.cols-2{ grid-template-columns:1fr } }
+    .card{ background:#fff; border:1px solid var(--border); border-radius:14px; padding:16px; box-shadow:var(--shadow) }
+    .badge{ display:inline-block; font-size:.8rem; padding:.2rem .5rem; border-radius:999px; border:1px solid var(--border); color:#2e2e2e; background:#fafafa }
+    .btn{ display:inline-block; padding:.5rem .8rem; border-radius:10px; background:#f3f7f7; border:1px solid var(--border) }
+    .btn:hover{ background:#edf3f3; text-decoration:none }
 
     /* Board / Team */
     .board{
@@ -168,23 +140,10 @@
     .board-list li + li{ margin-top:.15rem }
 
     /* Gallery */
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:16px;
-    }
-    .gallery img{
-      width:100%;
-      height:auto;          /* 이미지 비율 유지 */
-      border-radius:10px;
-      display:block;
-    }
-    @media (max-width:900px){
-      .gallery{ grid-template-columns:repeat(3,1fr) }
-    }
-    @media (max-width:600px){
-      .gallery{ grid-template-columns:repeat(2,1fr) }
-    }
+    .gallery{ display:grid; grid-template-columns:repeat(4,1fr); gap:8px }
+    .gallery img{ width:100%; height:160px; object-fit:cover; border-radius:10px; display:block }
+    @media (max-width:900px){ .gallery{ grid-template-columns:repeat(3,1fr) } }
+    @media (max-width:600px){ .gallery{ grid-template-columns:repeat(2,1fr) } }
 
     /* Contact / Footer */
     form label{ display:block; margin:.6rem 0 .25rem }
@@ -295,7 +254,7 @@
           }
         },
         "image":"https://dogokculturia.com/assets/audrey-noon-poster.jpg",
-        "description":"오드리(오경희, 한양대 미래융합 과정 교수)의 음반발매 기념 콘서트",
+        "description":"오드리(오경희, 한양대 미래융합 과정 교수)의 음반 발매를 기념하는 늦가을 정오 콘서트 프로그램.",
         "offers":{
           "@type":"Offer",
           "price":"0",
@@ -305,7 +264,7 @@
       },
       {
         "@type":"Event",
-        "name":"초겨울 정오의 글 향기 - 김성장 작가의 서예 붓 콘서트",
+        "name":"초겨울 정오의 글 향기 - 김성장 작가의 서예 북콘서트",
         "startDate":"2025-12-03T14:00:00+09:00",
         "endDate":"2025-12-03T16:00:00+09:00",
         "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
@@ -319,7 +278,7 @@
           }
         },
         "image":"https://dogokculturia.com/assets/20251122_brushconcert_image.jpg",
-        "description":"김성장 작가의 서예 붓 콘서트",
+        "description":"초겨울 정오의 글 향기, 김성장 작가의 서예 북콘서트. 책 구매 시 나를 위한 서예 한 점을 함께 가져갈 수 있는 프로그램.",
         "offers":{
           "@type":"Offer",
           "price":"0",
@@ -447,7 +406,7 @@
             <div class="badge">정오 프로그램</div>
             <h3 id="ev3-title">늦가을 정오 오드리와 함께</h3>
             <p class="muted">2025-11-18(화) 11:00–14:00 · 도곡 만남과 문화의 집</p>
-            <p>오드리(오경희, 한양대 미래융합 과정 교수)의 음반발매 기념 콘서트.</p>
+            <p>오드리(오경희, 한양대 미래융합 과정 교수)의 음반 발매를 기념하는 정오 콘서트 프로그램입니다.</p>
             <a class="btn" href="#gallery">포스터 보기</a>
           </article>
 
@@ -456,7 +415,7 @@
             <div class="badge">서예 북콘서트</div>
             <h3 id="ev4-title">초겨울 정오의 글 향기</h3>
             <p class="muted">2025-12-03(수) 14:00–16:00 · 도곡 만남과 문화의 집</p>
-            <p>김성장 작가의 서예 붓 콘서트</p>
+            <p>김성장 작가의 서예 북콘서트. 책을 구매하시면 나를 위한 서예 한 점을 함께 가져가실 수 있는 시간입니다.</p>
             <a class="btn" href="#gallery">행사 사진 · 포스터 보기</a>
           </article>
         </div>
@@ -479,27 +438,24 @@
                loading="lazy">
 
           <!-- ecohistoria prize 수상식 포스터/사진 -->
-          <img src="assets/ecohistoria-prize-poster.jpg"
+          <img src="assets/20251103_ecohistoriaprize_1.jpg"
                alt="ecohistoria prize 수상식 포스터"
                loading="lazy">
-          <img src="assets/ecohistoria-prize-scene.jpg"
+          <img src="assets/20251103_ecohistoriaprize_2.jpg"
                alt="ecohistoria prize 수상식 현장 사진"
                loading="lazy">
 
           <!-- 늦가을 정오 오드리와 함께 포스터/사진 -->
-          <img src="assets/audrey-noon-poster.jpg"
+          <img src="assets/20251115_audreyposter.png"
                alt="늦가을 정오 오드리와 함께 포스터"
                loading="lazy">
-          <img src="assets/audrey-noon-scene.jpg"
+          <img src="dogokculturia/assets/20251122_audreyconcert.jpg"
                alt="늦가을 정오 오드리와 함께 프로그램 현장 사진"
                loading="lazy">
 
           <!-- 초겨울 정오의 글 향기 서예 북콘서트 -->
           <img src="assets/calligraphy-bookconcert-poster.jpg"
                alt="초겨울 정오의 글 향기 서예 북콘서트 포스터"
-               loading="lazy">
-          <img src="assets/20251122_brushconcert_image.jpg"
-               alt="김성장 작가의 서예 붓 콘서트"
                loading="lazy">
         </div>
       </div>
