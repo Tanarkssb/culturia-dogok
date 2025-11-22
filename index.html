@@ -107,24 +107,43 @@
     .muted{ color:var(--muted) }
 
     /* Cards / grids */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px;                 /* 원래 8px 써도 됨: 보기 좋게 16px로 살짝 넓혀둔 값 */
-}
-.gallery img{
-  width:100%;
-  height:auto;              /* 이미지 높이를 원본 비율대로 */
-  border-radius:10px;
-  display:block;
-}
-@media (max-width:900px){
-  .gallery{ grid-template-columns:repeat(3,1fr) }
-}
-@media (max-width:600px){
-  .gallery{ grid-template-columns:repeat(2,1fr) }
-}
-
+    .grid{ display:grid; gap:16px }
+    .grid.cols-3{ grid-template-columns:repeat(3,1fr) }
+    .grid.cols-2{ grid-template-columns:repeat(2,1fr) }
+    @media (max-width:960px){
+      .grid.cols-3{ grid-template-columns:repeat(2,1fr) }
+    }
+    @media (max-width:640px){
+      .grid.cols-3,
+      .grid.cols-2{ grid-template-columns:1fr }
+    }
+    .card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:16px;
+      box-shadow:var(--shadow);
+    }
+    .badge{
+      display:inline-block;
+      font-size:.8rem;
+      padding:.2rem .5rem;
+      border-radius:999px;
+      border:1px solid var(--border);
+      color:#2e2e2e;
+      background:#fafafa;
+    }
+    .btn{
+      display:inline-block;
+      padding:.5rem .8rem;
+      border-radius:10px;
+      background:#f3f7f7;
+      border:1px solid var(--border);
+    }
+    .btn:hover{
+      background:#edf3f3;
+      text-decoration:none;
+    }
 
     /* Board / Team */
     .board{
@@ -149,10 +168,23 @@
     .board-list li + li{ margin-top:.15rem }
 
     /* Gallery */
-    .gallery{ display:grid; grid-template-columns:repeat(4,1fr); gap:8px }
-    .gallery img{ width:100%; height:160px; object-fit:cover; border-radius:10px; display:block }
-    @media (max-width:900px){ .gallery{ grid-template-columns:repeat(3,1fr) } }
-    @media (max-width:600px){ .gallery{ grid-template-columns:repeat(2,1fr) } }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+    }
+    .gallery img{
+      width:100%;
+      height:auto;          /* 이미지 비율 유지 */
+      border-radius:10px;
+      display:block;
+    }
+    @media (max-width:900px){
+      .gallery{ grid-template-columns:repeat(3,1fr) }
+    }
+    @media (max-width:600px){
+      .gallery{ grid-template-columns:repeat(2,1fr) }
+    }
 
     /* Contact / Footer */
     form label{ display:block; margin:.6rem 0 .25rem }
