@@ -155,7 +155,13 @@
 
     /* A11y */
     :focus-visible{ outline:3px solid #6fd3d3; outline-offset:2px }
-    @media (prefers-reduced-motion:reduce){ *{ scroll-behavior:auto !important; animation:none !Important; transition:none !important } }
+    @media (prefers-reduced-motion:reduce){
+      *{
+        scroll-behavior:auto !important;
+        animation:none !important;
+        transition:none !important;
+      }
+    }
   </style>
 
   <!-- JSON-LD: 기관 정보 -->
@@ -219,7 +225,7 @@
             "addressLocality":"서울 강남구 도곡동"
           }
         },
-        "image":"https://dogokculturia.com/assets/ecohistoria-prize.jpg",
+        "image":"https://dogokculturia.com/assets/ecohistoria-prize-poster.jpg",
         "description":"생태환경사연구소 & 생태환경사학회 공동주최 독일 보훔대학 역사학과 프랑크 외쾨터 교수의 ecohistoria prize 수상식",
         "organizer":[
           { "@type":"Organization", "name":"생태환경사연구소" },
@@ -235,8 +241,8 @@
       {
         "@type":"Event",
         "name":"늦가을 정오 오드리와 함께",
-        "startDate":"2025-11-18T12:00:00+09:00",
-        "endDate":"2025-11-18T13:30:00+09:00",
+        "startDate":"2025-11-18T11:00:00+09:00",
+        "endDate":"2025-11-18T14:00:00+09:00",
         "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
         "eventStatus":"https://schema.org/EventScheduled",
         "location":{
@@ -248,7 +254,7 @@
           }
         },
         "image":"https://dogokculturia.com/assets/audrey-noon-poster.jpg",
-        "description":"늦가을 정오에 함께 즐기는 '오드리와 함께' 프로그램. 포스터 및 현장 사진 아카이브.",
+        "description":"오드리(오경희, 한양대 미래융합 과정 교수)의 음반 발매를 기념하는 늦가을 정오 콘서트 프로그램.",
         "offers":{
           "@type":"Offer",
           "price":"0",
@@ -259,8 +265,8 @@
       {
         "@type":"Event",
         "name":"초겨울 정오의 글 향기 - 김성장 작가의 서예 북콘서트",
-        "startDate":"2025-12-03T12:00:00+09:00",
-        "endDate":"2025-12-03T13:30:00+09:00",
+        "startDate":"2025-12-03T14:00:00+09:00",
+        "endDate":"2025-12-03T16:00:00+09:00",
         "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
         "eventStatus":"https://schema.org/EventScheduled",
         "location":{
@@ -271,7 +277,7 @@
             "addressLocality":"서울 강남구 도곡동"
           }
         },
-        "image":"https://dogokculturia.com/assets/calligraphy-bookconcert.jpg",
+        "image":"https://dogokculturia.com/assets/20251122_brushconcert_image.jpg",
         "description":"초겨울 정오의 글 향기, 김성장 작가의 서예 북콘서트. 책 구매 시 나를 위한 서예 한 점을 함께 가져갈 수 있는 프로그램.",
         "offers":{
           "@type":"Offer",
@@ -391,7 +397,7 @@
             <div class="badge">생태환경사연구소 & 생태환경사학회</div>
             <h3 id="ev2-title">ecohistoria prize 수상식</h3>
             <p class="muted">2025-11-03(월) · 도곡 만남과 문화의 집</p>
-            <p>독일 보훔대학 역사학과 프랑크 외쾨터 교수의 ecohistoria prize 수상식 및 축하연</p>
+            <p>독일 보훔대학 역사학과 프랑크 외쾨터 교수의 ecohistoria prize 수상식 및 축하연입니다.</p>
             <a class="btn" href="#gallery">포스터와 사진 보기</a>
           </article>
 
@@ -399,8 +405,8 @@
           <article class="card" aria-labelledby="ev3-title">
             <div class="badge">정오 프로그램</div>
             <h3 id="ev3-title">늦가을 정오 오드리와 함께</h3>
-            <p class="muted">2025-11-18(화) 11시 - 14시 도곡 만남과 문화의 집</p>
-            <p>오드리(오경희, 한양대 미래융합 과정 교수)의 음반발매 기념 콘서트</p>
+            <p class="muted">2025-11-18(화) 11:00–14:00 · 도곡 만남과 문화의 집</p>
+            <p>오드리(오경희, 한양대 미래융합 과정 교수)의 음반 발매를 기념하는 정오 콘서트 프로그램입니다.</p>
             <a class="btn" href="#gallery">포스터 보기</a>
           </article>
 
@@ -408,8 +414,8 @@
           <article class="card" aria-labelledby="ev4-title">
             <div class="badge">서예 북콘서트</div>
             <h3 id="ev4-title">초겨울 정오의 글 향기</h3>
-            <p class="muted">2025-12-02(화) 14시 ~ 16시 · 도곡 만남과 문화의 집</p>
-            <p>김성장 작가의 서예 붓 콘서트</p>
+            <p class="muted">2025-12-03(수) 14:00–16:00 · 도곡 만남과 문화의 집</p>
+            <p>김성장 작가의 서예 북콘서트. 책을 구매하시면 나를 위한 서예 한 점을 함께 가져가실 수 있는 시간입니다.</p>
             <a class="btn" href="#gallery">행사 사진 · 포스터 보기</a>
           </article>
         </div>
@@ -421,26 +427,39 @@
       <div class="wrap">
         <h2 id="gallery-title">갤러리</h2>
         <p class="muted">행사 포스터와 현장 사진이 순차적으로 아카이브됩니다.</p>
-        <!--
-          TODO: 아래 src 경로를 실제 업로드하신 파일명으로 교체해서 사용하세요.
-          예: assets/opening-lecture.jpg, assets/ecohistoria-poster.jpg 등
-        -->
+
         <div class="gallery">
           <!-- 개관 기념 강연 관련 이미지 -->
-          <img src="assets/opening-lecture.jpg" alt="개관 기념 강연 동서의학 교류 탐구: 한의학 속의 외과 포스터" loading="lazy">
-          <img src="assets/opening-lecture-scene.jpg" alt="개관 기념 강연 현장 사진" loading="lazy">
+          <img src="assets/opening-lecture.jpg"
+               alt="개관 기념 강연 동서의학 교류 탐구: 한의학 속의 외과 포스터"
+               loading="lazy">
+          <img src="assets/opening-lecture-scene.jpg"
+               alt="개관 기념 강연 현장 사진"
+               loading="lazy">
 
           <!-- ecohistoria prize 수상식 포스터/사진 -->
-          <img src="assets/ecohistoria-prize-poster.jpg" alt="ecohistoria prize 수상식 포스터" loading="lazy">
-          <img src="assets/ecohistoria-prize-scene.jpg" alt="ecohistoria prize 수상식 현장 사진" loading="lazy">
+          <img src="assets/ecohistoria-prize-poster.jpg"
+               alt="ecohistoria prize 수상식 포스터"
+               loading="lazy">
+          <img src="assets/ecohistoria-prize-scene.jpg"
+               alt="ecohistoria prize 수상식 현장 사진"
+               loading="lazy">
 
           <!-- 늦가을 정오 오드리와 함께 포스터/사진 -->
-          <img src="assets/audrey-noon-poster.jpg" alt="늦가을 정오 오드리와 함께 포스터" loading="lazy">
-          <img src="assets/audrey-noon-scene.jpg" alt="늦가을 정오 오드리와 함께 프로그램 사진" loading="lazy">
+          <img src="assets/audrey-noon-poster.jpg"
+               alt="늦가을 정오 오드리와 함께 포스터"
+               loading="lazy">
+          <img src="assets/audrey-noon-scene.jpg"
+               alt="늦가을 정오 오드리와 함께 프로그램 현장 사진"
+               loading="lazy">
 
           <!-- 초겨울 정오의 글 향기 서예 북콘서트 -->
-          <img src="assets/calligraphy-bookconcert-poster.jpg" alt="초겨울 정오의 글 향기 서예 북콘서트 포스터" loading="lazy">
-          <img src="assets/calligraphy-bookconcert-scene.jpg" alt="김성장 작가 서예 북콘서트 현장 사진" loading="lazy">
+          <img src="assets/calligraphy-bookconcert-poster.jpg"
+               alt="초겨울 정오의 글 향기 서예 북콘서트 포스터"
+               loading="lazy">
+          <img src="assets/20251122_brushconcert_image.jpg"
+               alt="김성장 작가 서예 북콘서트 현장 사진"
+               loading="lazy">
         </div>
       </div>
     </section>
@@ -463,11 +482,14 @@
     <section id="contact" aria-labelledby="contact-title">
       <div class="wrap">
         <h2 id="contact-title">문의 · 후원</h2>
-        <p>이메일 <strong>dogokculturia@gmail.com</strong> 또는 아래 폼으로 연락주세요.</p>
+        <p>
+          이메일 <strong>dogokculturia@gmail.com</strong>,
+          전화 <strong>02-6227-1503</strong> 또는 아래 폼으로 연락주세요.
+        </p>
         <form class="card" action="https://formspree.io/f/your-id" method="POST">
           <label>이름 <input type="text" name="name" required></label>
           <label>이메일 <input type="email" name="_replyto" required></label>
-          <label>전화번호 <strong> 02-6227-1503 </strong><input type="phone" name="phone" required></label>
+          <label>연락처 (전화번호) <input type="tel" name="phone" required></label>
           <label>메시지 <textarea name="message" required></textarea></label>
           <button type="submit">보내기</button>
           <p class="muted" style="margin:.6rem 0 0">* Formspree 가입 후 action URL을 실제 값으로 교체하세요.</p>
