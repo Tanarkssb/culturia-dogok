@@ -171,15 +171,25 @@
   border-radius:10px;
   display:block;
 }
+.gallery img{
+  width:100%;
+  height:auto;                    /* 비율 유지 */
+  display:block;
+  border-radius:12px;             /* 모서리 둥글게 */
+  border:1px solid #e4e4e4;       /* 연한 회색 테두리 */
+  padding:6px;                    /* 이미지와 테두리 사이 여백 */
+  background:#ffffff;             /* 카드 배경 흰색 */
+  box-shadow:0 8px 18px rgba(0,0,0,.06);  /* 살짝 떠 있는 느낌 */
+  box-sizing:border-box;
+}
 
-/* 반응형: 화면이 좁아질수록 열 수 줄이기 */
+/* 반응형 */
 @media (max-width:900px){
   .gallery{ grid-template-columns:repeat(3,1fr); }
 }
 @media (max-width:600px){
   .gallery{ grid-template-columns:repeat(2,1fr); }
 }
-
 
     /* Contact / Footer */
     form label{ display:block; margin:.6rem 0 .25rem }
